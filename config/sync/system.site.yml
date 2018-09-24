@@ -1,0 +1,14 @@
+uuid: 3d49311a-e66f-48fa-94aa-6998fb9dcdd5
+name: 'Drupal 8'
+mail: ashraf.mazumder@capgemini.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
