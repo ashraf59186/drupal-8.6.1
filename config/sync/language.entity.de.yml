@@ -1,0 +1,9 @@
+uuid: bf514551-87ea-4cac-b2f8-4aa5fac9736d
+langcode: en
+status: true
+dependencies: {  }
+id: de
+label: German
+direction: ltr
+weight: 3
+locked: false
