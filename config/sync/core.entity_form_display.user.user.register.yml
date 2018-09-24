@@ -24,25 +24,23 @@ bundle: user
 mode: register
 content:
   account:
-    weight: -10
+    weight: 0
     region: content
-  contact:
-    weight: 5
-    region: content
-  field_activity:
-    weight: 12
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+  contact:
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_date_of_birth:
-    weight: 9
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_first_name:
-    weight: 7
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -50,37 +48,32 @@ content:
     type: string_textfield
     region: content
   field_last_name:
-    weight: 8
+    weight: 6
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_profession:
-    weight: 11
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_qualification:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   language:
-    weight: 0
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
-    weight: 6
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    weight: -1
+    weight: 1
     region: content
-hidden: {  }
+hidden:
+  field_activity: true
+  field_profession: true
+  field_qualification: true

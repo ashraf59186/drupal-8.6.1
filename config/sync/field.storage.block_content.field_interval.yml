@@ -1,0 +1,21 @@
+uuid: ec31f8f7-7a2d-4d4f-b87d-c1553b310382
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_interval
+field_name: field_interval
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

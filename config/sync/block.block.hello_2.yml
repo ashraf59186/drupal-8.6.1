@@ -1,0 +1,25 @@
+uuid: 572649d2-3018-491d-b62c-9aac71b89dfe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:rotator:12491953-ae1e-4df2-a5e6-d2c8fbe36ffa'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: hello_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:12491953-ae1e-4df2-a5e6-d2c8fbe36ffa'
+settings:
+  id: 'block_content:12491953-ae1e-4df2-a5e6-d2c8fbe36ffa'
+  label: Hello
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

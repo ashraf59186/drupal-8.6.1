@@ -1,0 +1,38 @@
+uuid: 5ec5f059-6b60-45eb-9563-5c4e3fba363b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.rotator
+    - field.storage.block_content.field_multivalued
+  module:
+    - image
+id: block_content.rotator.field_multivalued
+field_name: field_multivalued
+entity_type: block_content
+bundle: rotator
+label: Multivalued
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
