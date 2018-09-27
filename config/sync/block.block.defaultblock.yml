@@ -1,0 +1,20 @@
+uuid: 123df523-d592-44f2-983e-02bdc0f0ef32
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_routing
+  theme:
+    - bartik
+id: defaultblock
+theme: bartik
+region: content
+weight: -1
+provider: null
+plugin: default_block
+settings:
+  id: default_block
+  label: 'Default block'
+  provider: d8_routing
+  label_display: visible
+visibility: {  }

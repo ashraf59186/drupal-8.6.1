@@ -2,17 +2,14 @@ uuid: 2cff354e-6c1d-45c7-8124-abf73a1b8f2d
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:803ec23b-6f97-4995-aae5-b26b28a00c64'
   module:
-    - block_content
     - language
   theme:
     - bartik
 id: dummyblock
 theme: bartik
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: 'block_content:803ec23b-6f97-4995-aae5-b26b28a00c64'
 settings:

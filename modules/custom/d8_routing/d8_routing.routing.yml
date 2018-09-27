@@ -1,0 +1,44 @@
+d8_routing.hello_world12:
+  path: 'hello-world'
+  defaults:
+    _controller: '\Drupal\d8_routing\Controller\RouteController::hello_world'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access bakiya content'
+
+d8_routing.dynamic_url:
+  path: 'hello/{name}'
+  defaults:
+    _controller: '\Drupal\d8_routing\Controller\RouteController::hello_dynamic'
+    _title_callback: '\Drupal\d8_routing\Controller\RouteController::hello_dynamictitle'
+  requirements:
+    _permission: 'access content'
+
+d8_routing.user_details:
+  path: 'user-info/{user}'
+  defaults:
+    _controller: '\Drupal\d8_routing\Controller\RouteController::get_user_info'
+    _title_callback: '\Drupal\d8_routing\Controller\RouteController::get_user_title'
+  requirements:
+    _permission: 'access content'
+d8_routing.node_details:
+  path: 'node-info/{node}'
+  defaults:
+    _controller: '\Drupal\d8_routing\Controller\RouteController::listNode'
+    _title: 'Node & Author'
+  requirements:
+    _access: 'TRUE'
+d8_routing_demo.simple_form:
+  path: '/simple-form'
+  defaults:
+    _form: '\Drupal\d8_routing\Form\SimpleForm'
+    _title: 'Simple Form'
+  requirements:
+    _permission: 'access content'
+d8_routing_demo.di_form:
+  path: 'di-form'
+  defaults:
+    _form: '\Drupal\d8_routing\Form\DIForm'
+    _title: 'DI Form'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,4 @@
+d8_routing.admin: 
+  route_name: system.site_information_settings  
+  title: 'Bakiya Settings'
+  base_route: system.site_information_settings

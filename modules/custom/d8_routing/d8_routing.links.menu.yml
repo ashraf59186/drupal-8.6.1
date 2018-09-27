@@ -1,0 +1,24 @@
+d8_routing.hello_world12:
+  title: "Hello world"
+  description: "Menu link"
+  route_name: d8_routing.hello_world12
+  expanded: 1
+  menu_name: main
+  weight: 100
+
+d8_routing.dynamic_url:
+  title: "Dynamic"
+  description: "Menu link"
+  route_name: d8_routing.dynamic_url
+  parent: d8_routing.hello_world12
+  route_parameters: {name: 'Bakiya' }
+  menu_name: main
+  weight: 100
+
+d8_routing.user_details:
+  title: "User Info"
+  description: "Menu link"
+  route_name: d8_routing.user_details
+  parent: d8_routing.hello_world12
+  route_parameters: {user: 1 }
+  menu_name: main
