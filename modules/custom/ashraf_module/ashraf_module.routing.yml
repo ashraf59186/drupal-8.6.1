@@ -1,0 +1,25 @@
+
+ashraf_module.route_controller_helloWorld:
+  path: 'hello-world'
+  defaults:
+    _controller: '\Drupal\ashraf_module\Controller\RouteController::helloWorld'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+ashraf_module.default_controller_helloDynamic:
+  path: 'hello-dynamic/{name}'
+  defaults:
+    _controller: '\Drupal\ashraf_module\Controller\DefaultController::helloDynamic'
+    _title: 'Hello Dynamic'
+  requirements:
+    _permission: 'access content'
+
+ashraf_module.simple_form:
+  path: 'simple-form'
+  defaults:
+    _form: '\Drupal\ashraf_module\Form\SimpleForm'
+    _title: 'SimpleForm'
+  requirements:
+    _access: 'TRUE'
+  
