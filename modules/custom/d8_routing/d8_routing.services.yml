@@ -1,4 +1,14 @@
 services:
   d8_routing.data_controller:
     class: Drupal\d8_routing\Controller\DataController
-    arguments: ['@database']
+    arguments: ['@database']  
+  d8_routing.kernel_response_subscriber:
+    class: Drupal\d8_routing\EventSubscriber\kernelResponseSubsciber
+    arguments: ['@path.current']
+    tags:
+      - { name: event_subscriber }
+  d8_routing_demo.data_entry_event_subscriber:
+    class: Drupal\d8_routing\EventSubscriber\DataEntryEventSubscriber
+    arguments: []
+    tags:
+      - { name: event_subscriber }
